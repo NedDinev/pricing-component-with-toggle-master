@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.switch-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+.switch-box h3 {
+  position: relative;
+  bottom: 14px;
+  color: #b3b5c6;
+}
+
+.toggle-control {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0 20px;
+}
+
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-control input:hover ~ .control {
+  opacity: 60%;
+}
+
+.toggle-control input:checked ~ .control {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), color-stop(#959aec), color-stop(#868be7), color-stop(#787de2), to(#696fdd));
+  background-image: linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+}
+
+.toggle-control input:checked ~ .control:after {
+  left: 33px;
+}
+
+.toggle-control .control {
+  -webkit-transform: rotate(0deg) scaleX(-1);
+          transform: rotate(0deg) scaleX(-1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 60px;
+  border-radius: 16px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), color-stop(#959aec), color-stop(#868be7), color-stop(#787de2), to(#696fdd));
+  background-image: linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  -webkit-transition: background-image linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  transition: background-image linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+}
+
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 16px;
+  background: white;
+  -webkit-transition: left 0.15s ease-in;
+  transition: left 0.15s ease-in;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: #f6f6fe;
+}
+
+body img {
+  position: absolute;
+  z-index: -1;
+}
+
+body .background-1 {
+  bottom: 0px;
+}
+
+body .background-2 {
+  right: 0;
+  top: 0;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  color: #494c5f;
+  margin-top: 80px;
+}
+
+main .pricings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .pricings span {
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+  bottom: 6px;
+}
+
+main .pricings #monthly-price-basic,
+main .pricings #monthly-price-professional,
+main .pricings #monthly-price-master {
+  display: inline-block;
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+main .pricings .professional {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), color-stop(#959aec), color-stop(#868be7), color-stop(#787de2), to(#696fdd));
+  background-image: linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  padding: 20px 25px;
+  color: #f6f6fe;
+  border-radius: 10px;
+  width: 280px;
+  height: 420px;
+  padding-top: 40px;
+}
+
+main .pricings .professional hr {
+  background-color: #a3a8f0;
+  height: 1px;
+  border: 0;
+}
+
+main .pricings .professional button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f6f6fe;
+  color: #3e52a3;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #f6f6fe;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main .pricings .professional button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #f6f6fe;
+}
+
+main .pricings .basic {
+  border-radius: 10px 0px 0px 10px;
+}
+
+main .pricings .master {
+  border-radius: 0px 10px 10px 0px;
+}
+
+main .pricings .basic,
+main .pricings .master {
+  color: #494c5f;
+  background-color: #ffffff;
+  width: 280px;
+  height: 400px;
+  padding: 20px 25px;
+}
+
+main .pricings .basic hr,
+main .pricings .master hr {
+  background-color: #b3b5c6;
+  height: 1px;
+  border: 0;
+}
+
+main .pricings .basic button,
+main .pricings .master button {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), color-stop(#959aec), color-stop(#868be7), color-stop(#787de2), to(#696fdd));
+  background-image: linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  color: #f6f6fe;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+main .pricings .basic button:hover,
+main .pricings .master button:hover {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #3e52a3;
+  color: #696fdd;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

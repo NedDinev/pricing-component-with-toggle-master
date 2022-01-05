@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Pricing component with toggle</title>
+  </head>
+  <body>
+    <img class="background-1" src="./images/bg-bottom.svg" />
+    <img class="background-2" src="./images/bg-top.svg" />
+    <!-- Above this line are the baclground images -->
+    <main>
+      <h1>Our Pricing</h1>
+      <div class="switch-box">
+        <h3>Annually</h3>
+
+        <label class="toggle-control">
+          <input id="switch" type="checkbox" onclick="switchPrice()" />
+
+          <span class="control"></span>
+        </label>
+
+        <h3>Monthly</h3>
+      </div>
+      <!-- Above this line is the price switch button with the headings -->
+
+      <div class="pricings">
+        <div class="basic">
+          <h3>Basic</h3>
+
+          <span>&dollar;</span>
+          <h2 id="monthly-price-basic">19.99</h2>
+
+          <hr />
+          <h4>500 GB Storage</h4>
+          <hr />
+          <h4>2 Users Allowed</h4>
+          <hr />
+          <h4>Send up to 3 GB</h4>
+          <hr />
+          <button>Learn More</button>
+        </div>
+
+        <div class="professional">
+          <h3>Professional</h3>
+
+          <span>&dollar;</span>
+          <h2 id="monthly-price-professional">24.99</h2>
+
+          <hr />
+          <h4>1 TB Storage</h4>
+          <hr />
+          <h4>5 Users Allowed</h4>
+          <hr />
+          <h4>Send up to 10 GB</h4>
+          <hr />
+
+          <button>Learn More</button>
+        </div>
+
+        <div class="master">
+          <h3>Master</h3>
+
+          <span>&dollar;</span>
+          <h2 id="monthly-price-master">39.99</h2>
+
+          <hr />
+          <h4>2 TB Storage</h4>
+          <hr />
+          <h4>10 Users Allowed</h4>
+          <hr />
+          <h4>Send up to 20 GB</h4>
+          <hr />
+          <button>Learn More</button>
+        </div>
+      </div>
+      <!-- Above this line is a container with the price cards -->
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a
+      >. Coded by <a href="https://github.com/NedDinev">NedDinev</a>.
+    </div>
+    <script type="text/javascript" src="script.js" defer></script>
+  </body>
+</html>

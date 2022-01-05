@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1010px) {
+  main .pricings {
+    flex-flow: column wrap;
+  }
+  main .pricings .professional {
+    height: 400px;
+    margin: 40px 0;
+  }
+  main .pricings .basic,
+  main .pricings .master {
+    border-radius: 10px;
+  }
+
+  body .background-1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  body .background-2 {
+    left: 200px;
+    top: 0;
+  }
+}

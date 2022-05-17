@@ -16,9 +16,36 @@
   }
 }
 
-@media only screen and (max-width: 510px) {
-  body .background-2 {
-    left: 200px;
-    top: 0;
+@media only screen and (max-width: 350px) {
+  main .pricings .basic,
+  main .pricings .master,
+  main .pricings .professional {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  main .pricings .basic,
+  main .pricings .master,
+  main .pricings .professional {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 275px) {
+  main .pricings .basic,
+  main .pricings .master,
+  main .pricings .professional {
+    width: 150px;
+  }
+  .toggle-control {
+    margin: 0 5px;
+  }
+  main .pricings #monthly-price-basic,
+  main .pricings #monthly-price-professional,
+  main .pricings #monthly-price-master {
+    font-size: 40px;
+  }
+  .switch-box h3 {
+    font-size: 15px;
   }
 }
